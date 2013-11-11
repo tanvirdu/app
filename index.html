@@ -1,0 +1,118 @@
+
+<style>
+.start
+{
+	background:lime;
+	width:100%;
+	height:0px;	
+	position: relative;
+	top:0px;
+	margin-top:10px;
+	transition: 1s all;
+	-webkit-transition: 1s all;
+}
+
+
+.cls
+{
+	background:red;
+	width:10px;
+	height:10px;	
+	float:right;
+	margin:10px;
+	transition: 1s all;
+	border-radius:5px;
+	-webkit-transition: 1s all;
+}
+
+@-webkit-keyframes anima
+{
+	0%{background:lime;}
+	100%{background:green;}
+}
+</style>
+<body onLoad="doa()">
+<center>
+
+<div>
+    <div class="start" id="st1" onClick="doaa1()" onDblClick="doa()">1<div class="cls" onclick='cls1()'></div></div>
+    <div class="start" id="st2" onClick="doaa2()" onDblClick="doa()">2<div class="cls" onclick='cls2()'></div></div>
+    <div class="start" id="st3" onClick="doaa3()" onDblClick="doa()">3<div class="cls" onclick='cls3()'></div></div>
+    <div class="start" id="st4" onClick="doaa4()" onDblClick="doa()">4<div class="cls" onclick='cls4()'></div></div>
+    <div class="start" id="st5" onClick="doaa5()" onDblClick="doa()">5<div class="cls" onclick='cls5()'></div></div>
+</div>
+</center>
+</body>
+
+<script>
+function doa()
+{
+	document.getElementById("st1").style.height='18%'
+	document.getElementById("st2").style.height='18%'
+	document.getElementById("st3").style.height='18%'
+	document.getElementById("st4").style.height='18%'
+	document.getElementById("st5").style.height='18%'
+	
+}
+function doaa1()
+{
+	document.getElementById("st1").style.height='60%'
+	document.getElementById("st2").style.height='18%'
+	document.getElementById("st3").style.height='18%'
+	document.getElementById("st4").style.height='18%'
+	document.getElementById("st5").style.height='18%'
+}
+function doaa2()
+{
+	document.getElementById("st1").style.height='18%'
+	document.getElementById("st2").style.height='60%'
+	document.getElementById("st3").style.height='18%'
+	document.getElementById("st4").style.height='18%'
+	document.getElementById("st5").style.height='18%'
+}
+function doaa3()
+{
+	document.getElementById("st1").style.height='18%'
+	document.getElementById("st2").style.height='18%'
+	document.getElementById("st3").style.height='60%'
+	document.getElementById("st4").style.height='18%'
+	document.getElementById("st5").style.height='18%'
+}
+function doaa4()
+{
+	document.getElementById("st1").style.height='18%'
+	document.getElementById("st2").style.height='18%'
+	document.getElementById("st3").style.height='18%'
+	document.getElementById("st4").style.height='60%'
+	document.getElementById("st5").style.height='18%'
+}
+function doaa5()
+{
+	document.getElementById("st1").style.height='18%'
+	document.getElementById("st2").style.height='18%'
+	document.getElementById("st3").style.height='18%'
+	document.getElementById("st4").style.height='18%'
+	document.getElementById("st5").style.height='60%'
+}
+function cls1()
+{
+	document.getElementById("st1").style.display='none'
+}
+function cls2()
+{
+	document.getElementById("st2").style.display='none'
+}
+function cls3()
+{
+	document.getElementById("st3").style.display='none'
+}
+function cls4()
+{
+	document.getElementById("st4").style.display='none'
+}
+function cls5()
+{
+	document.getElementById("st5").style.display='none'
+}
+//-webkit-animation: anima .5s infinite alternate;
+</script>
